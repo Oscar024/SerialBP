@@ -19,6 +19,12 @@ data = ser.read_all()
 data = data.decode("ascii")
 index = data.find("GetOneBPRec01")
 data = data[index:index+60]
+data = data.split("\r\n")
+sys = data[5]
+dia = data[6]
+pul = data[7]
 
-
-print(datos)
+sys = int(sys,16)
+dia = int(dia,16)
+pul = int(pul,16)
+print(data)
