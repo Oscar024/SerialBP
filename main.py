@@ -27,4 +27,6 @@ pul = data[7]
 sys = int(sys,16)
 dia = int(dia,16)
 pul = int(pul,16)
-print(data)
+print(sys)
+print(dia)
+print(pul)
